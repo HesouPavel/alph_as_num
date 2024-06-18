@@ -29,7 +29,9 @@ public:
     friend alph_as_num operator / ( const alph_as_num &a, const alph_as_num &b );
     alph_as_num operator /= ( const alph_as_num &b );
 
-    friend bool operator == ( const alph_as_num &a , const alph_as_num &b ) ;
+    friend bool operator == ( const alph_as_num &a , const alph_as_num &b ) = default;
+    friend bool operator == ( const alph_as_num &a , const std::string &s ) ;
+    friend bool operator == ( const alph_as_num &a , const char* s ) ;
     friend auto operator <=> ( const alph_as_num &a , const alph_as_num &b)  {
         return a.num_repr <=> b.num_repr;
     }

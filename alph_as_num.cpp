@@ -86,7 +86,20 @@ alph_as_num alph_as_num::operator/= ( const alph_as_num &b ){
     return *this;
 }
 
-bool operator==
+bool operator== ( const alph_as_num &a , const std::string &s ) {
+    std::string upper;
+    for ( auto &x : s ){
+        upper.push_back(toupper(x));
+    }
+    return a.str_repr == upper;
+}
+bool operator== ( const alph_as_num &a , const char * s ) {
+    std::string upper;
+    for ( auto &x : std::string(s) ){
+        upper.push_back(toupper(x));
+    }
+    return a.str_repr == upper;
+}
 
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
