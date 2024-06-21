@@ -33,6 +33,7 @@ public:
      */
     alph_int operator + ( const alph_int &b );
     friend alph_int operator + (const alph_int &a, const alph_int &b );
+    // both of these are valid, but the latter if used more commonly and sticks to the rules mentioned in the last comment
     alph_int operator += (const alph_int &b );
     friend alph_int operator - (const alph_int &a, const alph_int &b );
     alph_int operator -= (const alph_int &b );
