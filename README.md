@@ -1,4 +1,4 @@
-# alph_as_num
+# alph_int
 using alphabetics to represent unsigned integer values\
 
 need to work with the letters of alphabet as with integers?\
@@ -8,3 +8,5 @@ To be specific:
 * assigning
 * numeric operations
 * printing
+
+Also provides a nice showcase for operator overloading and the *"friend"* keyword

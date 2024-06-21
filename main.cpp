@@ -1,18 +1,18 @@
 #include <iostream>
 #include <string>
 #include <cassert>
-#include "alph_as_num.h"
+#include "alph_int.h"
 
 int main () {
-    alph_as_num a("abc");
-    a.print(std::cout);
-    alph_as_num b("aaa");
-    alph_as_num c = "aaa";
+    alph_int a("abc");
+    alph_int b("aaa");
+    alph_int c = "aaa";
     assert(a != b);
     assert(!(a == b));
     assert(b == c);
-    alph_as_num d = a + b;
+    alph_int d = a + b;
     assert(d == "bcd");
+    1+'a';
     return EXIT_SUCCESS;
 }
 
